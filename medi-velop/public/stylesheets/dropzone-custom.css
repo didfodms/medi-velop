@@ -1,0 +1,10 @@
+.dropzone-custom {
+  border: none;
+  transition: 0.3s;
+}
+
+.dropzone-custom:hover {
+  box-shadow: 0 0 0 3px #c9c9c9 inset;
+  box-sizing: border-box;
+  transition: 0.3s;
+}

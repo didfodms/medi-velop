@@ -1,0 +1,207 @@
+{
+    "resourceType": "Bundle",
+    "type": "collection",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "1001",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Darilyn769 Walter197"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "http://mimic.physionet.org/fhir/patient",
+              "value": "1001"
+            }
+          ],
+          "active": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-multipleBirth",
+              "valueBoolean": false
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Rogers81",
+              "given": [
+                "Merrill630"
+              ]
+            }
+          ],
+          "gender": "male",
+          "birthDate": "2124-01-18",
+          "address": [
+            {
+              "use": "home",
+              "line": [
+                "8 Glen Eagle",
+                "Apt #713"
+              ],
+              "city": "Worcester",
+              "state": "MA",
+              "postalCode": "01609",
+              "country": "USA"
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "(896) 262-3465"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Worcester",
+                "state": "MA",
+                "country": "USA"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "1002",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Layla547 Rey873"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "http://mimic.physionet.org/fhir/patient",
+              "value": "1002"
+            }
+          ],
+          "active": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-multipleBirth",
+              "valueBoolean": false
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Hilll706",
+              "given": [
+                "Allene169"
+              ]
+            }
+          ],
+          "gender": "female",
+          "birthDate": "2041-02-20",
+          "address": [
+            {
+              "use": "home",
+              "line": [
+                "8 Broad Street",
+                "Apt #664"
+              ],
+              "city": "Worcester",
+              "state": "MA",
+              "postalCode": "01605",
+              "country": "USA"
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "(628) 190-8984"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2028-9",
+                    "display": "Asian"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Asian"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Worcester",
+                "state": "MA",
+                "country": "USA"
+              }
+            }
+          ]
+        }
+      }
+  }
