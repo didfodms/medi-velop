@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const FILE_NAME = "data2";
+const FILE_NAME = "data";
 
 const csvPath = path.join(__dirname, "./csv", FILE_NAME + ".csv");
 const csv = fs.readFileSync(csvPath, "utf-8");
@@ -71,14 +71,16 @@ const userQuery =
   JSON.stringify(csvResults) +
   "\nMap the above MIMIC 3 data to the FHIR standard and show it in json resource format.";
 
-console.log(userQuery);
+// console.log(userQuery);
 
 const getChatGPTAnswer = async (userQuery) => {
   return await new Promise((resolve, reject) => {
     chatGPT(userQuery);
   });
 };
+
 const chatGPTAnswer = getChatGPTAnswer(userQuery);
+console.log(chatGPTAnswer);
 
 // FHIR validate - using npm fhir module
 const Fhir = require("fhir").Fhir;

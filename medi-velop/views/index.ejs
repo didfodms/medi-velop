@@ -29,6 +29,14 @@
     <!-- custom -->
     <link rel="stylesheet" href="stylesheets/dropzone-custom.css" />
     <link rel="stylesheet" href="stylesheets/fhir-custom.css" />
+
+    <!-- CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
     <header id="header-section">
@@ -233,30 +241,216 @@
         </script>
         <section class="contact-us" id="fhir-section">
           <div class="contact-us-bgimage fhir grid-margin">
-            <h4>Encounter 리소스</h4>
-            <div class="resource-field">
+            <h4>Bundle 리소스</h4>
+
+            <!-- <style>
+              .accordion {
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                overflow: hidden;
+                margin: 20px 0;
+              }
+
+              .accordion-item {
+                border-top: 1px solid #ddd;
+              }
+
+              .accordion-title {
+                background-color: #f5f5f5;
+                padding: 10px;
+                cursor: pointer;
+                font-weight: bold;
+              }
+
+              .accordion-title:hover {
+                background-color: #e5e5e5;
+              }
+
+              .accordion-content {
+                padding: 10px;
+              }
+            </style> -->
+
+            <!-- <div class="resource-field">
               <h6 class="resource-field-name">ID :</h6>
               <textarea style="resize: both">haha</textarea>
             </div>
-            <div class="resource-field">
-              <h6 class="resource-field-name">ID :</h6>
-              <textarea style="resize: both">haha</textarea>
-            </div>
-            <div class="resource-field">
-              <h6 class="resource-field-name">ID :</h6>
-              <textarea style="resize: both">haha</textarea>
-            </div>
-            <div class="resource-field">
-              <h6 class="resource-field-name">ID :</h6>
-              <textarea style="resize: both">haha</textarea>
+            <div class="resource-field arccodion-item">
+              <h6 class="resource-field-name accordion-title">ID :</h6>
+              <div class="accordion-content">
+                <div class="resource-field">
+                  <h6 class="resource-field-name">ID :</h6>
+                  <textarea style="resize: both">haha</textarea>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="resource-field arccodion-item">
+              <h6 class="resource-field-name accordion-title">entry :</h6>
+              <div class="accordion-content">
+                <div class="resource-field">
+                  <h6 class="resource-field-name accordion-title">
+                    resource :
+                  </h6>
+                  <div class="accordion-content">
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">resourceType :</h6>
+                      <textarea style="resize: both">Patient</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">id :</h6>
+                      <textarea style="resize: both">100001</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">gender :</h6>
+                      <textarea style="resize: both">female</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">birthDate :</h6>
+                      <textarea style="resize: both">1971-08-07</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="resource-field">
+                  <h6 class="resource-field-name accordion-title">
+                    resource :
+                  </h6>
+                  <div class="accordion-content">
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">resourceType :</h6>
+                      <textarea style="resize: both">Patient</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">id :</h6>
+                      <textarea style="resize: both">100002</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">gender :</h6>
+                      <textarea style="resize: both">male</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">birthDate :</h6>
+                      <textarea style="resize: both">1985-04-15</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="resource-field">
+                  <h6 class="resource-field-name accordion-title">
+                    resource :
+                  </h6>
+                  <div class="accordion-content">
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">resourceType :</h6>
+                      <textarea style="resize: both">Patient</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">id :</h6>
+                      <textarea style="resize: both">100003</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">gender :</h6>
+                      <textarea style="resize: both">female</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">birthDate :</h6>
+                      <textarea style="resize: both">1978-11-26</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="resource-field">
+                  <h6 class="resource-field-name accordion-title">
+                    resource :
+                  </h6>
+                  <div class="accordion-content">
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">resourceType :</h6>
+                      <textarea style="resize: both">Patient</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">id :</h6>
+                      <textarea style="resize: both">100004</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">gender :</h6>
+                      <textarea style="resize: both">male</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">birthDate :</h6>
+                      <textarea style="resize: both">1965-06-11</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">deceasedDateTime :</h6>
+                      <textarea style="resize: both">
+2015-03-25T00:00:00Z</textarea
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="resource-field">
+                  <h6 class="resource-field-name accordion-title">
+                    resource :
+                  </h6>
+                  <div class="accordion-content">
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">resourceType :</h6>
+                      <textarea style="resize: both">Patient</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">id :</h6>
+                      <textarea style="resize: both">100005</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">gender :</h6>
+                      <textarea style="resize: both">female</textarea>
+                    </div>
+                    <div class="resource-field">
+                      <h6 class="resource-field-name">birthDate :</h6>
+                      <textarea style="resize: both">1992-09-03</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="btn-unit" data-aos="fade-up">
-              <button class="btn btn-rounded btn-outline-success">Edit</button>
-              <button class="btn btn-rounded btn-outline-primary">
+              <button
+                id="fhirUploadBtn"
+                class="btn btn-rounded btn-outline-primary"
+              >
                 Upload
               </button>
             </div>
+
+            <script>
+              $(document).ready(function () {
+                $(".accordion-title").click(function () {
+                  $(this).next(".accordion-content").slideToggle();
+                });
+
+                $("#fhirUploadBtn").click(function () {
+                  Swal.fire({
+                    // title: "FHIR 서버 업로드 완료",
+                    text: "FHIR 리소스를 서버에 업로드 했습니다!",
+                    icon: "success",
+
+                    showConfirmButton: false,
+                    showCloseButton: false,
+                    showCancelButton: false,
+
+                    timer: 1500,
+                    timerProgressBar: true,
+                  });
+                });
+              });
+            </script>
 
             <!-- <div class="pb-4">
               <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">
