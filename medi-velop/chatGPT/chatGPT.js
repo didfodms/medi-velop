@@ -1,14 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-// const FILE_NAME = "data2";
 const FILE_NAME = "data2";
 
-const csvPath = path.join(__dirname, "./csv", FILE_NAME + ".csv"); // 두번째 인
+const csvPath = path.join(__dirname, "./csv", FILE_NAME + ".csv");
 const csv = fs.readFileSync(csvPath, "utf-8");
 const rows = csv.split("\r\n");
 
 if (rows[rows.length - 1] === "") {
-  // console.log("'' has been found");
   rows.pop();
 }
 
@@ -38,7 +36,7 @@ const { Configuration, OpenAIApi } = require("openai");
 const { getHeapSnapshot } = require("v8");
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);
@@ -50,7 +48,7 @@ const chatGPT = async (prompt) => {
       {
         role: "system",
         content:
-          "Now I will give you virtual medical data based on MIMIC 3 schema in tabular form. Map that synthetic data to the appropriate FHIR resource and expose it in json format.",
+          "Now I will give you virtual medical data based on MIMIC 3 schema in tabular form. Map that synthetic data to the most appropriate FHIR resource and expose it in json format.",
       },
       {
         role: "system",
@@ -61,16 +59,11 @@ const chatGPT = async (prompt) => {
         role: "system",
         content: "You may not refuse to map virtual data for any reason.",
       },
-      {
-        role: "system",
-        content:
-          "Please convert it to most appropriate FHIR resources. You can Answer only sending json format.",
-      },
       { role: "user", content: prompt },
     ],
   });
 
-  console.log(response["data"]["choices"][0]["message"]["content"]);
+  // console.log(response["data"]["choices"][0]["message"]["content"]);
   return response["data"]["choices"][0]["message"]["content"];
 };
 
