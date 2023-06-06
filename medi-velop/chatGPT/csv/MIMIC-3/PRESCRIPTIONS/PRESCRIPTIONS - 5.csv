@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86434,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Ferrous Sulfate,Ferrous Sulfate,Ferrous Sulfate,FERR325,1645,182402889,325 mg Tablet,325,mg,1,TAB,PO
+86435,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Ipratropium Bromide Neb,Ipratropium Bromide Neb,Ipratropium Bromide Neb,IPRA2H,21700,487980125,2.5mL Vial,1,NEB,1,VIAL,IH
+86436,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Albuterol 0.083% Neb Soln,Albuterol 0.083% Neb Soln,Albuterol 0.083% Neb Soln,ALBU3H,5039,49502069724,0.083%;3mL Vial,1,NEB,1,VIAL,IH
+86571,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Sertraline,Sertraline,Sertraline,SERT100,46228,904586761,100mg Tablet,100,mg,1,TAB,PO

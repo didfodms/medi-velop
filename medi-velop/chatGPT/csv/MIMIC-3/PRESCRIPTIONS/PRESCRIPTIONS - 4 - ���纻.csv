@@ -1,0 +1,6 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+59655,42275,128293,290478,2135-10-26 0:00,2135-10-27 0:00,MAIN,Azithromycin,Azithromycin,Azithromycin,ZITHR250,26721,59762306003,250 mg Tab,500,mg,2,TAB,PO
+59656,42275,128293,,2135-10-27 0:00,2135-10-27 0:00,MAIN,PredniSONE,PredniSONE,PredniSONE,PRED20,6751,54001820,20 mg Tablet,60,mg,3,TAB,PO
+86431,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Pneumococcal Vac Polyvalent,Pneumococcal Vac Polyvalent,PNEUMOcoccal Vac Polyvalent,PNEU25I,48548,6494300,25mcg/0.5mL Vial,0.5,mL,1,VIAL,IM
+86432,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Heparin Flush (10 units/ml),Heparin Flush (10 units/ml),Heparin Flush (10 Units/mL),HEPA10SYR,60304,8290036005,10 Units/mL - 5 mL Syringe,1,mL,0.2,SYR,IV
+86433,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Multivitamins,Multivitamins,Multivitamins,MVI,2532,904053061,1 Tablet,1,TAB,1,TAB,PO

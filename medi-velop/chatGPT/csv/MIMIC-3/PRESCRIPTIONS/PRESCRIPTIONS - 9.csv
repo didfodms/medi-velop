@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86749,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,MAIN,Vancomycin,,,VANC1F,43952,338355248,1g Frozen Bag,1000,mg,1,BAG,IV
+86750,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,MAIN,CefePIME,,,CEFE2I,24095,60505068104,2g Vial,2,gm,1,mL,IV
+86751,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,MAIN,MetRONIDAZOLE (FLagyl),,,METR500PM,9588,409781124,500mg Premix Bag,500,mg,1,BAG,IV
+86752,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,MAIN,Vancomycin,,,VANC1F,43952,338355248,1g Frozen Bag,1000,mg,1,BAG,IV

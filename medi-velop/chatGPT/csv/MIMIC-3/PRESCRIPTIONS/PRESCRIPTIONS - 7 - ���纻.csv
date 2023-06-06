@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86603,43735,112662,,2128-11-04 0:00,2128-11-06 0:00,BASE,1/2 NS,,,NS451000,1209,338004304,1000mL Bag,1000,mL,1000,mL,IV
+86604,43735,112662,,2128-11-04 0:00,2128-11-05 0:00,BASE,Vial,,,VIAL,,0,Send Vial,1,VIAL,1,VIAL,IV
+86605,43735,112662,293363,2128-11-06 0:00,2128-11-06 0:00,BASE,0.9% Sodium Chloride,,,NS500,1210,338004903,500mL Bag,500,mL,500,mL,IV
+86606,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,BASE,Iso-Osmotic Dextrose,,,VANCOBASE,,0,200ml Bag,200,mL,200,mL,IV

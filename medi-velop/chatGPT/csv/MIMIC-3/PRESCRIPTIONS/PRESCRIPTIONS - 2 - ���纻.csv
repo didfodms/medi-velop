@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+32614,42458,159647,,2146-07-21 0:00,2146-07-22 0:00,MAIN,Docusate Sodium,Docusate Sodium,Docusate Sodium,DOCU100,3009,904224461,100mg Capsule,100,mg,1,CAP,PO
+59637,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Sodium Chloride 0.9%  Flush,Sodium Chloride 0.9%  Flush,Sodium Chloride 0.9%  Flush,NACLFLUSH,,0,Syringe,3,mL,0.6,SYR,IV
+59638,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Heparin,Heparin,Heparin Sodium,HEPA5I,6549,63323026201,5000 Units / mL- 1mL Vial,5000,UNIT,1,mL,SC
+59639,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Guaifenesin,Guaifenesin,Guaifenesin,GUAI10,759,121174410,10mL Cup,05¿ù 10ÀÏ,mL,0.5-1,UDCUP,PO

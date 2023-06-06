@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86608,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,BASE,NS,,,METRBASE,,0,100ml,100,mL,100,mL,IV
+86609,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,BASE,Iso-Osmotic Dextrose,,,VANCOBASE,,0,200ml Bag,200,mL,200,mL,IV
+86610,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,BASE,0.9% Sodium Chloride (Mini Bag Plus),,,NS/MBP100I,1210,338055318,100mL Bag,100,mL,1,BAG,IV
+86611,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,BASE,5% Dextrose,,,D5W100,1972,409792337,100mL Bag,100,mL,100,mL,IV DRIP

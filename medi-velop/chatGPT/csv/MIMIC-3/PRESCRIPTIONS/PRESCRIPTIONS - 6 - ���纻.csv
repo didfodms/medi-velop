@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86593,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,MAIN,Metoprolol Tartrate,Metoprolol Tartrate,Metoprolol Tartrate,METO5I,19808,143987310,5mg/5mL Vial,5,mg,1,VIAL,IV
+86594,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,MAIN,Fentanyl Citrate,Fentanyl Citrate,Fentanyl,FENT2.550,41385,10019003783,2.5mg/50mL Solution,2.5,mg,1,BAG,IV DRIP
+86595,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,MAIN,Midazolam,Midazolam,Midazolam,MIDA100,3780,10019002710,100mg/100mL NS,100,mg,1,BAG,IV DRIP
+86596,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,MAIN,Propofol,Propofol,Propofol,PROP100IG,16796,63323026965,1000mg/100mL Vial,1000,mg,1,VIAL,IV DRIP

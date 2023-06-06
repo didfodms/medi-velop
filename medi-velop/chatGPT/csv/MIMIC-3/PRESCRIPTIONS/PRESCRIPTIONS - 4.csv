@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+59651,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Docusate Sodium,Docusate Sodium,Docusate Sodium,DOCU100,3009,904224461,100mg Capsule,100,mg,1,CAP,PO
+59652,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Senna,Senna,Senna,SENN187,19964,904516561,1 Tablet,1,TAB,1,TAB,PO
+59653,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Sodium Chloride Nasal,Sodium Chloride Nasal,Sodium Chloride Nasal,SODI65S,8084,256015201,45mL Bottle,01월 02일,SPRY,01월 02일,SPRY,NU
+59654,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Sodium Chloride 0.9%  Flush,Sodium Chloride 0.9%  Flush,Sodium Chloride 0.9%  Flush,NACLFLUSH,,0,Syringe,3,mL,0.6,SYR,IV

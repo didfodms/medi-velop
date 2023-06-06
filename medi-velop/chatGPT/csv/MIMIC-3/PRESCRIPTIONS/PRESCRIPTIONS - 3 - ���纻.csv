@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+59646,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Tiotropium Bromide,Tiotropium Bromide,Tiotropium Bromide,TIOT,50714,597007575,18mcg Capsule-Inhalation Device,1,CAP,1,CAP,IH
+59647,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Aspirin,Aspirin,Aspirin,ASA325,4376,63739002401,325mg Tablet,325,mg,1,TAB,PO
+59648,42275,128293,290478,2135-10-25 0:00,2135-10-26 0:00,MAIN,Azithromycin,Azithromycin,Azithromycin,ZITHR250,26721,59762306003,250 mg Tab,500,mg,2,TAB,PO
+59649,42275,128293,290478,2135-10-25 0:00,2135-10-25 0:00,MAIN,Azithromycin,Azithromycin,Azithromycin,ZITHR250,26721,59762306003,250 mg Tab,250,mg,1,TAB,PO

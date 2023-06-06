@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const FILE_NAME = "data";
 
-const csvPath = path.join(__dirname, "./csv", FILE_NAME + ".csv");
+const csvPath = path.join(__dirname, "../uploads", FILE_NAME + ".csv");
 const csv = fs.readFileSync(csvPath, "utf-8");
 const rows = csv.split("\r\n");
 
@@ -27,16 +27,16 @@ for (const i in rows) {
   }
 }
 
-console.log(csvResults);
+// console.log(csvResults);
 
 // chatGPT API
 require("dotenv").config();
 
 const { Configuration, OpenAIApi } = require("openai");
-const { getHeapSnapshot } = require("v8");
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  // apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -47,40 +47,53 @@ const chatGPT = async (prompt) => {
     messages: [
       {
         role: "system",
-        content:
-          "Now I will give you virtual medical data based on MIMIC 3 schema in tabular form. Map that synthetic data to the most appropriate FHIR resource and expose it in json format.",
-      },
-      {
-        role: "system",
-        content:
-          "Do not stop showing data in the middle. You must show everything.",
-      },
-      {
-        role: "system",
-        content: "You may not refuse to map virtual data for any reason.",
+        content: `Now I will give you virtual medical data based on 
+          MIMIC 3 schema in tabular form. 
+          Map that synthetic data to the most appropriate 
+          FHIR resource and expose it 
+          in json format.`,
       },
       { role: "user", content: prompt },
     ],
   });
 
-  // console.log(response["data"]["choices"][0]["message"]["content"]);
   return response["data"]["choices"][0]["message"]["content"];
 };
 
-const userQuery =
-  JSON.stringify(csvResults) +
-  "\nMap the above MIMIC 3 data to the FHIR standard and show it in json resource format.";
+// CSV to JSON의 EMR JSON
+const emrJSON = JSON.stringify(csvResults);
 
-// console.log(userQuery);
-
-const getChatGPTAnswer = async (userQuery) => {
-  return await new Promise((resolve, reject) => {
-    chatGPT(userQuery);
-  });
+// get FHIR from chatGPT
+const getResponse = async (emr) => {
+  return await chatGPT(emr);
 };
 
-const chatGPTAnswer = getChatGPTAnswer(userQuery);
-console.log(chatGPTAnswer);
+// FHIR만 추출하기
+getResponse(emrJSON).then((response) => {
+  const regex = /```([^`]+)```/g;
+  const result = response.match(regex);
+  // console.log(result[0]);
+  const lines = result[0].split(/[\n\r]+/);
+  const jsonArray = lines.slice(1, lines.length - 1);
+  // 배열의 각 원소를 JavaScript 객체로 변환
+  const jsonObjects = jsonArray.map((jsonString) => jsonString.trim()).join("");
+  const jsonString = JSON.stringify("[" + jsonObjects + "]");
+  const fhir = JSON.parse(JSON.parse(jsonString));
+
+  console.log("type : ", typeof fhir);
+  console.log("fhir : ", fhir);
+  console.log("fhir resourceType : ", fhir[0].resourceType);
+
+  // // 객체들을 하나로 합치기
+  // const jsonObject = Object.assign({}, ...jsonObjects);
+
+  // console.log(jsonObject, typeof jsonObject, jsonObject.length);
+
+  // const lines = result.split(/[\n\r]+/);
+  // const convertFhir = lines.slice(1, lines.length - 1);
+
+  // console.log("FHIR result", convertFhir);
+});
 
 // FHIR validate - using npm fhir module
 const Fhir = require("fhir").Fhir;

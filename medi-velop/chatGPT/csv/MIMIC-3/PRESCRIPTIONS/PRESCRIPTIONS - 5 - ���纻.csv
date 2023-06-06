@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86573,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Levothyroxine Sodium,Levothyroxine Sodium,Levothyroxine Sodium,LEVO100,6651,74662411,100mcg Tablet,200,mcg,2,TAB,PO
+86574,43735,112662,,2128-11-04 0:00,2128-11-09 0:00,MAIN,Allopurinol,Allopurinol,Allopurinol,ALLO100,2535,51079020520,100mg Tab,100,mg,1,TAB,PO
+86575,43735,112662,293363,2128-11-05 0:00,2128-11-09 0:00,MAIN,Pantoprazole,Pantoprazole,Pantoprazole,PANT40,27462,8084199,40mg Tablet,40,mg,1,TAB,PO
+86576,43735,112662,293363,2128-11-05 0:00,2128-11-06 0:00,MAIN,Furosemide,Furosemide,Furosemide,FURO40I,8205,517570425,40mg/4mL Vial,40,mg,1,VIAL,IV

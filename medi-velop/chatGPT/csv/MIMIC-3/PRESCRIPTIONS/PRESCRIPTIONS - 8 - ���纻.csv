@@ -1,0 +1,6 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86612,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,BASE,5% Dextrose,,,D5W100,1972,409792337,100mL Bag,100,mL,100,mL,IV DRIP
+86613,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,BASE,Vial,,,VIAL,,0,Send Vial,1,VIAL,1,VIAL,IV
+86614,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,BASE,5% Dextrose,,,D5W250,1972,338001702,250mL Bag,250,mL,250,mL,IV DRIP
+86615,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,BASE,0.9% Sodium Chloride,,,NS1000,1210,338004904,1000mL Bag,1000,mL,1,BAG,IV
+86616,43735,112662,283181,2128-11-09 0:00,2128-11-10 0:00,BASE,D5W,,,MORPD5W,,0,100mL Bottle,100,mL,1,BTL,IV DRIP

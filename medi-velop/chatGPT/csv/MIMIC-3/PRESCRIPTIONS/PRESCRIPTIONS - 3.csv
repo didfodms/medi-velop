@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+59641,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Amlodipine,Amlodipine,Amlodipine,AMLO5,16926,51079045120,5mg Tablet,5,mg,1,TAB,PO
+59642,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Finasteride,Finasteride,Finasteride,FINA5,41440,555077002,5mgTablet,5,mg,1,TAB,PO
+59643,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Gabapentin,Gabapentin,Gabapentin,GABA100,21413,904563161,100mg Capsule,200,mg,2,CAP,PO
+59644,42275,128293,290478,2135-10-25 0:00,2135-10-27 0:00,MAIN,Levothyroxine Sodium,Levothyroxine Sodium,Levothyroxine Sodium,LEVO75,6650,74518211,75mcg Tab,75,mcg,1,TAB,PO

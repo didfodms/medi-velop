@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+86754,43735,112662,,2128-11-08 0:00,2128-11-09 0:00,MAIN,Furosemide,,,FURO100I,8205,517571025,100mg/10mL Vial,100,mg,1,VIAL,IV DRIP
+86755,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,MAIN,Furosemide,,,FURO100I,8205,517571025,100mg/10mL Vial,100,mg,1,VIAL,IV DRIP
+86756,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,MAIN,Pantoprazole Sodium,,,PANT40I,47635,8092355,40mg Vial,40,mg,1,VIAL,IV
+86757,43735,112662,283181,2128-11-09 0:00,2128-11-09 0:00,MAIN,Norepinephrine,,,LEVO4I,28633,703115303,4mg/4mL Amp,8,mg,2,AMP,IV DRIP

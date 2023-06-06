@@ -1,0 +1,5 @@
+row_id,subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route
+32609,42458,159647,,2146-07-21 0:00,2146-07-22 0:00,MAIN,Gabapentin,Gabapentin,Gabapentin,GABA100,21413,904563161,100mg Capsule,100,mg,1,CAP,PO
+32610,42458,159647,,2146-07-21 0:00,2146-07-22 0:00,MAIN,Namenda,Namenda,*NF* Memantine,MEMA5,53324,456320563,5mg Tablet,5,mg,1,TAB,ORAL
+32611,42458,159647,,2146-07-21 0:00,2146-07-22 0:00,MAIN,Tolterodine,Tolterodine,Tolterodine,TOLT1,39138,9454101,1mg Tablet,1,mg,1,TAB,PO
+32612,42458,159647,,2146-07-21 0:00,2146-07-22 0:00,MAIN,Metoprolol Succinate XL,Metoprolol Succinate XL,Metoprolol Succinate XL,TOPR25,47586,58177029311,25mg XL Tab,12.5,mg,0.5,TAB,PO
