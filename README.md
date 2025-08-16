@@ -129,10 +129,12 @@ const getChatGPTAnswer = async (userQuery) => {
 
 const chatGPTAnswer = getChatGPTAnswer(userQuery);
 console.log(chatGPTAnswer);
- 
-변환된 FHIR 유효성 검증
+```
+
+## 변환된 FHIR 유효성 검증
 ChatGPT API의 결과로 EMR에서 변환된 FHIR 표준은 FHIR 데이터 모델과 형식이 일치하는지 그 유효성을 검증해야 합니다. FHIR 표준의 유효성 검증에는 npm fhir모듈의 validate() 함수를 사용합니다.
 
+```js
 // FHIR validate - npm fhir module
 const Fhir = require("fhir").Fhir;
 const fhir = new Fhir();
